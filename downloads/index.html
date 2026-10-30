@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Downloads - Avira Client</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Download Avira Client v3.33 for Windows. One setup file for the Avira Launcher or the official Minecraft Launcher.">
+<link rel="canonical" href="https://aviraclient.net/downloads">
+<link rel="icon" type="image/png" href="/img/mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Hanken+Grotesk:wght@400&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Avira Client home"><img src="/img/mark.png" alt=""><span>AVIRA</span></a>
+    <nav class="nav" aria-label="Pages">
+      <a href="/#play">Play</a>
+      <a href="/#perform">Perform</a>
+      <a href="/#control">Control</a>
+      <a href="/#switch">Switch</a>
+      <a href="/updates">Updates</a>
+    </nav>
+    <a class="get-link" href="/downloads" aria-current="page">Download</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <p class="label"><span class="dash"></span> Downloads <span class="slash">/</span> <span class="pink">v3.33</span></p>
+      <h1>Get <em>Avira.</em></h1>
+      <p>One setup file. When you run it, you pick how you want to play: in the Avira Launcher, or as a profile in the official Minecraft Launcher.</p>
+    </div>
+  </section>
+
+  <section class="dl">
+    <div class="wrap">
+      <article class="dl-card">
+        <div class="dl-main">
+          <p class="product">Recommended</p>
+          <h2>Avira Setup</h2>
+          <p class="dl-sub">Avira Client v3.33 for Minecraft 1.8.9, launcher 2.1.0</p>
+          <a class="btn" href="https://github.com/aviraclient/avira/releases/download/v3.33/Avira-Setup.exe">Download for Windows</a>
+        </div>
+        <dl class="dl-facts">
+          <div><dt>Version</dt><dd>3.33</dd></div>
+          <div><dt>Released</dt><dd><time datetime="2026-10-30">Oct 30, 2026</time></dd></div>
+          <div><dt>File</dt><dd>Avira-Setup.exe</dd></div>
+          <div><dt>Size</dt><dd>78.8 MB</dd></div>
+          <div><dt>System</dt><dd>Windows 10 or 11, 64-bit</dd></div>
+          <div class="dl-hash">
+            <dt>SHA-256</dt>
+            <dd><code id="sha">cb83d9ad6327d3f24b221d9c76ce81453ba80e6051c5bf2ff515816755b68a22</code>
+              <button type="button" class="copy" data-copy="sha">Copy</button></dd>
+          </div>
+        </dl>
+      </article>
+
+      <div class="dl-choices">
+        <article>
+          <p class="label"><span class="dash"></span> Option one</p>
+          <h3>Avira Launcher</h3>
+          <p>Installs our launcher for your Windows user, with Desktop and Start menu shortcuts. It downloads Minecraft and Java 8 for you, keeps itself and Avira up to date, and lists featured servers you can join in one click. Sign in with your Microsoft account to play on any server, or use an offline account for singleplayer and cracked servers.</p>
+        </article>
+        <article>
+          <p class="label"><span class="dash"></span> Option two</p>
+          <h3>Minecraft Launcher</h3>
+          <p>Adds an "Avira Client" profile to the official Minecraft Launcher, with its own game folder. You sign in with Microsoft as usual, so it works on Hypixel and other premium servers. Avira downloads new versions in the background and tells you when to restart.</p>
+        </article>
+      </div>
+
+      <div class="dl-notes">
+        <section>
+          <h3>"Windows protected your PC"</h3>
+          <p>The setup isn't code-signed yet, so Windows SmartScreen may warn you the first time. Click <b>More info</b>, then <b>Run anyway</b>. You can check the file matches the SHA-256 above first: in PowerShell, run <code>Get-FileHash Avira-Setup.exe</code>.</p>
+        </section>
+        <section>
+          <h3>Uninstalling</h3>
+          <p>The Avira Launcher shows up in Windows Settings, under Apps, like any other program. For the Minecraft Launcher option, delete the "Avira Client" installation in the launcher.</p>
+        </section>
+        <section>
+          <h3>What changed</h3>
+          <p>Every change to the client, launcher, installer and this website is on the <a href="/updates">Updates</a> page. Downloads are hosted on <a href="https://github.com/aviraclient/avira/releases" rel="noopener">GitHub Releases</a>, where you can also find older versions.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Avira Client home"><img src="/img/mark.png" alt=""><span>AVIRA</span></a>
+    <div class="footer-links">
+      <a href="/downloads">Downloads</a>
+      <a href="/updates">Updates</a>
+      <a href="https://discord.gg/eXpBwZJzem" rel="noopener">Discord</a>
+      <a href="https://www.youtube.com/@aviraclient" rel="noopener">YouTube</a>
+    </div>
+    <small>Not affiliated with Mojang Studios, Microsoft or Hypixel.</small>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll('.copy').forEach(function (button) {
+    button.addEventListener('click', function () {
+      var text = document.getElementById(button.dataset.copy).textContent.trim();
+      var done = function () {
+        button.textContent = 'Copied';
+        setTimeout(function () { button.textContent = 'Copy'; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () {});
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
